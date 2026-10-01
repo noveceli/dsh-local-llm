@@ -3,6 +3,10 @@
   "version": "0.1.2",
   "description": "Local LLM control center for DeepSeek Harness: Ollama management, ModelScope GGUF downloads, model switching, download folder, search/schedule toggles — all from the settings page.",
   "type": "module",
+  "scripts": {
+    "build": "tsdown --config tsdown.config.ts",
+    "prepare": "tsdown --config tsdown.config.ts"
+  },
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
@@ -33,11 +37,13 @@
     "@deepseek-ai/schemastery": "*",
     "@deepseek-ai/dsh-host-webserver": "*"
   },
+  "dependencies": {
+    "tsdown": "^0.15.0",
+    "typescript": "^5.6.0"
+  },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@types/react": "^18.3.1",
-    "react": "^18.3.1",
-    "tsdown": "^0.15.0",
-    "typescript": "^5.6.0"
+    "react": "^18.3.1"
   }
 }
