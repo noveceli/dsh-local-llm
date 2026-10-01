@@ -1,0 +1,23 @@
+{
+  "name": "my-dsh-plugins",
+  "url": "https://github.com/<your-username>/dsh-local-llm",
+  "source": "self-hosted",
+  "updated": "2026-10-01",
+  "categories": ["llm", "tools", "settings"],
+  "plugins": [
+    {
+      "name": "dsh-local-llm",
+      "owner": "<your-username>",
+      "url": "https://github.com/<your-username>/dsh-local-llm",
+      "category": "llm",
+      "description": {
+        "en": "Local LLM control center: Ollama management, ModelScope GGUF downloads, model switching, download folder, search/schedule toggles.",
+        "zh": "本地模型控制中心：Ollama 管理、魔搭 GGUF 下载、模型切换、下载目录、搜索/定时任务开关。"
+      },
+      "npm": "dsh-local-llm",
+      "version": "0.1.2",
+      "tarball": "https://github.com/<your-username>/dsh-local-llm/releases/latest/download/dsh-local-llm-0.1.2.tgz",
+      "install": "dsh plugin --profile web add dsh-local-llm"
+    }
+  ]
+}
